@@ -81,24 +81,23 @@ Procedure steps are written in the imperative and are requirements unless they s
 
 ### Before testing
 
-1. Remove cases, covers and screen protectors.
-2. Record the unit's condition (age, visible wear, prior repairs). Lab units shall be preconditioned to their assigned wear levels per [U: Usage](usage.md) [TBD].
-3. Record temperature and humidity.
-4. Measure the exposure area and calculate the dose for every level.
-5. Take [baseline measurements](../testing/measurements.md) for every applicable effect.
-6. Home tier: the tester may choose a maximum level in advance.
+1. Confirm the unit meets [Test Conditions](../testing/conditions.md), including its baseline for this group.
+2. Measure the exposure area and calculate the dose for every level.
+3. Home tier: the tester may choose a maximum level in advance.
 
 ### Each level
 
 1. **Weigh** the dose increment for this level.
-2. **Place the unit** inside the bin in its most open state (hinged devices fully open; slab devices front face up).
+2. **Place the unit** on the raised rack inside the bin, in its most open state (hinged devices fully open; slab devices front face up). The rack shall hold the unit clear of medium that has fallen to the bin floor.
 3. **Apply half** the increment, sprinkled evenly from about 10 cm above. The medium may be shaken through the #20 sieve to give an even spread.
 4. **Brush** each seam, hinge line and port opening with 5 light strokes.
 5. **Run half** the level's cycles.
-6. **Turn the unit over** (hinged devices: close it). Apply the other half of the increment to the exposed faces, edges and ports, brush, and run the remaining cycles.
+6. **Turn the unit over** on the rack (hinged devices: close it). Apply the other half of the increment to the exposed faces, edges and ports, brush, and run the remaining cycles.
 7. **Shed loose material:** hold the unit edge-down and tap it 3 times on each long edge onto a folded towel. Do not blow or wipe the seams at this stage.
 8. **Measure** every applicable effect (see [Measurements](../testing/measurements.md)) and record the results.
 9. **Grade the level** (see [Grading](#grading)) and decide whether to continue (see [Stop rules](#stop-rules)).
+
+> **Note (informative):** Without the rack, a unit turned over in step 6 would lie in the medium that fell during the first half, so its real dose would depend on the size of the bin.
 
 ### Stop rules
 
@@ -111,17 +110,17 @@ Procedure steps are written in the imperative and are requirements unless they s
 
 ### After testing
 
-| Tier | Requirement |
+| When | Requirement |
 |---|---|
-| Home | [Recovery cleaning](../testing/tiers.md#home-tier-recovery-cleaning) |
-| Lab | [Teardown](../testing/tiers.md#lab-tier-teardown) |
+| After D and after G, both tiers | [Between-group cleaning](../testing/conditions.md#between-group-cleaning) |
+| After the last group, lab tier | [Teardown](../testing/tiers.md#lab-tier-teardown) |
 
 ## Grading
 
 1. A level is **passed** if no uppercase effect appeared after it.
 2. The **digit** is the highest level passed (0 if level 1 failed).
 3. Effect letters and the failure letter shall be written per [Code Format](../rating/code-format.md#effect-letters), including the failure-letter priority order and the meaning of an absent failure letter.
-4. Enclosure breaches found at teardown are handled per [D: Dust](dust.md#enclosure-breach-found-at-teardown).
+4. Enclosure breaches found at teardown are handled per [Test Tiers](../testing/tiers.md#attributing-an-enclosure-breach).
 
 ### Examples (hypothetical)
 
@@ -130,6 +129,6 @@ Procedure steps are written in the imperative and are requirements unless they s
 | `D5r` | Home | Passed moderate dust; rough motion appeared at level 5, so testing stopped to protect the device |
 | `G3` | Home | Passed light grit with no effects; the tester's chosen maximum was 3 |
 | `D9` | Lab | Passed buried fine dust with nothing getting in |
-| `D7iE` | Lab | Passed heavy fine dust with debris visible in seams but no effect; electrical fault at level 8 |
+| `D7iE` | Lab | Passed heavy fine dust with dust visible inside openings but no effect; electrical fault at level 8 |
 | `G6rC` | Lab | Passed moderate grit with rough motion; at level 7 the hinge would not close |
 | `G3hrR` | Lab | Passed light grit with loosened hold and rough motion; at level 4 the hinge bound |

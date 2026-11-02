@@ -16,12 +16,16 @@ Each group segment is written as:
 
 1. The code shall begin with `IDR` followed immediately by the major spec version, with no space (`IDR1`).
 2. Codes from different major versions are not comparable.
+3. While this specification is a draft (version 0.x), codes shall use major version 0: `IDR0` and `IDR0*`.
+
+> **Note (informative):** Examples in this specification use `IDR1` to show the format codes will take under version 1. Draft-era `IDR0` codes are not comparable with version 1 codes.
 
 ## Home-tier marker
 
 1. Home-tier codes shall carry `*` immediately after the version: `IDR1*`.
 2. Lab-tier codes shall carry no marker: `IDR1`.
 3. A code marked `*` is never equivalent to a lab-tier code.
+4. In Markdown and similar markup, a code shall be written in code formatting (`` `IDR1* …` ``) or with the `*` escaped (`IDR1\*`), so that it is not read as emphasis.
 
 The tiers are defined in [Test Tiers](../testing/tiers.md).
 
@@ -52,7 +56,7 @@ The tiers are defined in [Test Tiers](../testing/tiers.md).
 ## Failure letter
 
 1. At most one failure letter shall be written, after the effect letters.
-2. The failure letter names the failure at the next level above the rated level.
+2. The failure letter names the failure at the next level above the rated level (for W, the next step on the [W ladder](../groups/water.md#ladder)).
 3. If several failures appear at once, the most severe shall be used, in this priority order:
 
 | Priority | Letter |
@@ -68,8 +72,10 @@ The priority of the water letters `F` and `M` is [TBD].
 
 ## Absent failure letter
 
-| Group | Digit | Meaning of no failure letter |
-|---|---|---|
-| D, G | 9 | The unit passed the whole ladder |
-| D, G | Below 9 | Testing was stopped before any failure was reached. This is normal for home-tier tests |
-| U, W | Any | [TBD] |
+No failure letter means no failure was reached: either the top of the scale was passed, or testing stopped first. Stopping first is normal for home-tier tests.
+
+| Group | Top of the scale |
+|---|---|
+| U | U4 |
+| D, G | Level 9 |
+| W | The last step of the [W ladder](../groups/water.md#ladder) |

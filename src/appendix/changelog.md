@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.3 (2026-11-01)
+
+Resolved contradictions and gaps found in a review of v0.2.
+
+### Structure
+
+- Added [Test Conditions](../testing/conditions.md): test order, unit state, per-group baselines and between-group cleaning. Home recovery cleaning moved there from Test Tiers and now also applies between groups at both tiers.
+- Enclosure-breach handling moved from D: Dust to [Test Tiers](../testing/tiers.md#attributing-an-enclosure-breach), because breaches can now be attributed to D, G or W.
+
+### Substantive changes
+
+- **Teardown** happens once, after the last group tested, so lab units can complete W. Lab units are photographed under UV after D, before cleaning.
+- **Breach attribution:** breaches are attributed to D (fluorescent debris), G (coarse grains) or W (liquid, corrosion, liquid contact indicators). Attributed results are marked unverified, and those units give no IDRS digit for that group; if none remain, the digit is 0. This replaces the `[TBD]` for how the IDRS dust digit is written.
+- **Lab results:** every unit's full code is published, plus a **headline code** from the least-worn eligible unit.
+- **IDRS:** only units at or above the standard wear level are eligible, and rule 5 takes the lowest digit across eligible units only. This fixes the conflict with the eligibility rule. "Passed cleanly" for the water digit now means no effect letters other than `i`.
+- **Versions:** draft-era codes use major version 0 (`IDR0`, `IDR0*`, `IDRS0`). The short code now carries the version (`IDRS1 315`).
+- **Markup:** codes in Markdown must be in code formatting or have the `*` escaped.
+- **Absent failure letter:** one rule for every group (top passed, or testing stopped first).
+- **U digit:** new units are `U0`, preconditioned units take their wear level, and real-wear units are `UX`. The standard wear level is now defined in U: Usage.
+- **Ingress (`i`)** now means medium or water inside an opening, below the outer surface. Medium on the outer surface no longer counts.
+- **Thresholds** now apply to every group the letter is listed for, not only D and G.
+- **Unit state:** units are powered on with the screen on during exposure, and are not charged during exposure or while wet.
+- **Per-group baselines:** thresholds compare against a baseline taken before each group. Change from the first baseline is also reported.
+- **Rack:** during D and G, the unit sits on a raised rack clear of fallen medium.
+- **G medium:** home sand must be silica, checked with a vinegar carbonate check.
+- **W:** defined the ladder (time tiers 1 and 2 at each depth, then 3 and 4 at the deepest), stop rules, grading, failure letter, the water type (tap; no distilled, deionized, salt or pool water), immersion depth, pressure-vessel option, cycling and drying. Depth tier 1 is not run at time tiers 3 and 4. The example code became `W52E`, because a failure at 1 h must carry a failure letter.
+- **Measurements:** recordings for `b`, `r` and `s` are kept for review, with optional second-person confirmation.
+- **Safety:** added UV, charging and pressure-vessel requirements.
+- **Reporting:** added W items, unit state, skipped groups, judgement confirmation and teardown attribution.
+
 ## v0.2 (2026-11-01)
 
 Restructured the specification as an mdBook, merging the Overview draft (v0.1) and the Dust and Grit test documentation (draft v0.2). Where the two conflicted, the Dust and Grit documentation was followed.

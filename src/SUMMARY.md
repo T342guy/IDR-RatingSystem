@@ -21,6 +21,7 @@
 # Testing
 
 - [Test Tiers](testing/tiers.md)
+- [Test Conditions](testing/conditions.md)
 - [Measurements](testing/measurements.md)
 - [Reporting](testing/reporting.md)
 - [Safety](testing/safety.md)

@@ -14,17 +14,17 @@ IDR (Ingress & Durability Rating) is an independent, unofficial rating system fo
 2. Every [moving part](rating/definitions.md) shall be operated during dust, grit and water exposure.
 3. Results shall record what happened, including partial damage, not only pass or fail.
 
-The exception for a unit that fails during preconditioning is defined in [U: Usage](groups/usage.md). IDR tests are run at one of two [test tiers](testing/tiers.md): home or lab.
+The exception for a unit that fails during preconditioning is defined in [U: Usage](groups/usage.md). Test order, unit state and cleaning between groups are defined in [Test Conditions](testing/conditions.md). IDR tests are run at one of two [test tiers](testing/tiers.md): home or lab.
 
 ## Status
 
-This specification is **Draft v0.2**. It is unofficial and incomplete.
+This specification is **Draft v0.3**. It is unofficial and incomplete. Codes issued under a draft use version 0 (see [Code Format](rating/code-format.md#version-prefix)).
 
 | Area | Status |
 |---|---|
-| Code format, effect letters, IDRS | Defined |
+| Code format, effect letters, IDRS | Defined; `f` and `m` thresholds [TBD] |
 | D and G | Scale, doses, procedure and grading defined; thresholds provisional |
-| U | Scale defined; wear cycle counts and procedure [TBD] |
-| W | Depth and time tiers and grading defined; procedure [TBD] |
+| W | Scale, ladder and grading defined; spray method, cycles per step and drying period [TBD] |
+| U | Scale and U digit rules defined; wear cycle counts and procedure [TBD] |
 
 Every undefined value is marked `[TBD]` and listed in [Open Issues](appendix/open-issues.md). Version history is in the [Changelog](appendix/changelog.md).

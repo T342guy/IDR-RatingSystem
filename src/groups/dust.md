@@ -12,7 +12,7 @@ The D medium is defined in [Test Media](../equipment/media.md).
 
 Lab-tier D tests shall use a UV tracer. Tracer equipment is listed in [Kits](../equipment/kits.md) and its preparation in [Test Media](../equipment/media.md#uv-tracer).
 
-> **Note (informative):** The tracer lets teardown show where dust got in.
+> **Note (informative):** The tracer lets teardown show where dust got in, and tells D debris apart from G debris (see [attributing an enclosure breach](../testing/tiers.md#attributing-an-enclosure-breach)).
 
 ## Full dose
 
@@ -23,11 +23,3 @@ Lab-tier D tests shall use a UV tracer. Tracer equipment is listed in [Kits](../
 ## Scale, procedure and grading
 
 D uses the shared scale, dose formula, procedure and grading in [D and G: Particulate Testing](particulate.md).
-
-## Enclosure breach found at teardown
-
-1. An enclosure breach found at lab teardown shall be recorded in the report with its location.
-2. That unit's D result shall be marked unverified in the report.
-3. No IDRS dust digit shall be issued from that unit (see [IDRS Short Code](../rating/idrs.md)).
-
-> **Note (informative):** A teardown cannot show at which level the breach happened, so the D digit cannot be confirmed. See [Open Issues](../appendix/open-issues.md).
