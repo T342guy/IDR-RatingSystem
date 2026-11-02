@@ -1,0 +1,7 @@
+[book]
+title = "IDR: Ingress & Durability Rating"
+authors = ["T3"]
+language = "en"
+src = "src"
+
+[output.html]
