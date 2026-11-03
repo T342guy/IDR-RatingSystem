@@ -59,16 +59,19 @@ The tiers are defined in [Test Tiers](../testing/tiers.md).
 2. The failure letter names the failure at the next level above the rated level (for W, the next step on the [W ladder](../groups/water.md#ladder)).
 3. If several failures appear at once, the most severe shall be used, in this priority order:
 
-| Priority | Letter |
-|---|---|
-| 1 (most severe) | `E` |
-| 2 | `S` |
-| 3 | `C` |
-| 4 | `R` |
-| 5 | `H` |
-| 6 (least severe) | `B` |
+| Priority | Letter | Failure |
+|---|---|---|
+| 1 (most severe) | `E` | Electrical fault |
+| 2 | `F` | Water inside a lens or display |
+| 3 | `S` | Screen |
+| 4 | `K` | Casing, back glass or lens cover cracked |
+| 5 | `C` | Will not close |
+| 6 | `M` | Audio |
+| 7 | `R` | Binding |
+| 8 | `H` | Hold force |
+| 9 (least severe) | `B` | Buttons, keys or ports |
 
-The priority of the water letters `F` and `M` is [TBD].
+> **Note (informative):** `F` ranks just below `E` because persistent fogging or droplets show that water reached a sealed optical path. `K` ranks above `C` because a crack opens a path for dust and water. `M` ranks above `R` because losing audio blocks calls, while binding parts can often still be used.
 
 ## Absent failure letter
 

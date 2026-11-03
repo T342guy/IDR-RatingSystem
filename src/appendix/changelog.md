@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.4 (2026-11-02)
+
+Replaced every remaining `[TBD]` with a defined, provisional value. Each new value and its basis is listed in the [provisional values register](open-issues.md#provisional-values-register).
+
+### Structure
+
+- Added the [Report Template](report-template.md) appendix.
+- Open Issues now holds only questions for testing and items for the author's review, plus the provisional values register.
+
+### Substantive changes
+
+- **U:** defined levels in simulated days (U1 90, U2 360, U3 720, U4 1,440), wear actions and counts per level, the drop procedure, stop rules and the procedure. U2 is confirmed as the standard wear level.
+- **Real wear:** units with real wear take an equivalent level from days since first use or battery cycle count, whichever is lower. `UX` is now only for units whose age is unknown.
+- **Lab units:** at least one `U0` and one `U4` unit; further units should cover U1–U3.
+- **Effect letters:** added `k` (casing, back glass or lens cover damage). `E` now applies to U. Defined thresholds for `f` and `m`. `r` lowercase now uses a measured sound level (at least 6 dB above baseline) instead of "heard at 30 cm".
+- **Failure priority:** now E, F, S, K, C, M, R, H, B.
+- **W:** defined the spray method, immersion depth tolerance, pressure-vessel equivalents, cycling schedule, the 2-hour drying period, and the 5 °C water temperature limit. Ports, covers and trays are not operated during W.
+- **Measurements:** defined methods for `r` (sound level), `f`, `m` and `k`.
+- **Verification units:** a lab tester may confirm an unverified result with an extra unit torn down at the claimed level. A verified result can contribute to the IDRS code.
+- **IDRS:** units whose enclosure was opened for repair are not eligible.
+- **Safety:** added drop, water (no diving to retrieve units), pressure-vessel and rig requirements, and the charging delay after drying.
+- **Kits:** added U, W and measurement equipment.
+- **Reporting:** added U items, sound levels, rig use, verification units and IDRS derivation.
+
 ## v0.3 (2026-11-01)
 
 Resolved contradictions and gaps found in a review of v0.2.

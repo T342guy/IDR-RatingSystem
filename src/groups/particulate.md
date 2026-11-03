@@ -75,6 +75,8 @@ One cycle means operating every moving part through its full range once, at abou
 | Port covers and trays | Opened and closed once every 10 cycles |
 | Ports | A plug inserted and removed once every 10 cycles |
 
+Cycles may be run by hand or by a motorized rig. A rig shall move each part through its full range at the rate above. The report shall state which was used.
+
 ## Procedure
 
 Procedure steps are written in the imperative and are requirements unless they say otherwise. Equipment is listed in [Kits](../equipment/kits.md) and safety requirements in [Safety](../testing/safety.md).

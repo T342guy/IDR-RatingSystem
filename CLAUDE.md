@@ -57,6 +57,7 @@ src/
 │   └── media.md
 └── appendix/
     ├── volume-conversions.md
+    ├── report-template.md
     ├── open-issues.md
     └── changelog.md
 ```
@@ -71,12 +72,12 @@ src/
 | `rating/code-format.md` | Code grammar, group order, version prefix, `*` home-tier marker, `X` for not tested, effect and failure letter rules, failure-letter priority order, meaning of a digit below 9 with no failure letter |
 | `rating/effect-letters.md` | The closed list of effect letters, which groups each applies to, and lowercase/uppercase thresholds |
 | `rating/idrs.md` | IDRS format and every derivation rule |
-| `groups/usage.md` | U group: wear levels, standard wear level, U digit by unit condition, preconditioning. Procedure mostly `[TBD]` |
+| `groups/usage.md` | U group: wear levels in simulated days, wear actions, drops, standard wear level, U digit by unit condition (including real wear), procedure, grading |
 | `groups/particulate.md` | Shared by D and G: the 0–9 scale, dose formula, cycle definition, per-level procedure, stop rules, level grading |
 | `groups/dust.md` | D group: what it tests (sealing), its medium (by link), its full dose, anything specific to D |
 | `groups/grit.md` | G group: what it tests (mechanism tolerance), its medium (by link), its full dose, anything specific to G |
 | `groups/water.md` | W group: water medium, depth and time tiers, ladder and stop rules, procedure, grading, water-specific effects |
-| `testing/tiers.md` | Home and lab tiers: units, device fate, device condition, stop rules (by link), lab teardown, enclosure-breach attribution |
+| `testing/tiers.md` | Home and lab tiers: units, device fate, device condition, stop rules (by link), lab teardown, enclosure-breach attribution, verification units |
 | `testing/conditions.md` | Conditions for every group: test order, unit state, per-group baselines, between-group cleaning (including home recovery cleaning) |
 | `testing/measurements.md` | How each effect is measured (methods only; thresholds live in `effect-letters.md`) |
 | `testing/reporting.md` | Report contents checklist; combining multiple units (per-unit codes and the headline code) |
@@ -84,5 +85,6 @@ src/
 | `equipment/kits.md` | Home kit and lab kit contents |
 | `equipment/media.md` | D and G test media: materials, sieve fractions, preparation, reuse |
 | `appendix/volume-conversions.md` | Informative tablespoon conversions |
-| `appendix/open-issues.md` | Every unresolved question and every `[TBD]` |
+| `appendix/report-template.md` | Informative fill-in report template covering every required report item |
+| `appendix/open-issues.md` | Every unresolved question, every `[TBD]`, and the provisional values register |
 | `appendix/changelog.md` | Version history |

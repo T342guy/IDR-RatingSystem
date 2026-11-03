@@ -34,5 +34,6 @@
 # Appendices
 
 - [Volume Conversions](appendix/volume-conversions.md)
+- [Report Template](appendix/report-template.md)
 - [Open Issues](appendix/open-issues.md)
 - [Changelog](appendix/changelog.md)

@@ -10,7 +10,9 @@ Every term below is used with exactly this meaning throughout the specification.
 | **Dose** | The mass of test medium, in grams, applied to a unit. Calculated per [D and G: Particulate Testing](../groups/particulate.md#dose) |
 | **Effect** | A change in a unit observed during or after testing, recorded with an effect letter |
 | **Effect letter** | A letter from the closed list in [Effect Letters](effect-letters.md). Lowercase means the effect is within tolerance; uppercase means it is a failure |
-| **Eligible unit** | A lab-tier unit at or above the standard wear level, from which IDRS digits can be derived. See [IDRS Short Code](idrs.md#eligibility) |
+| **Drying period** | The fixed wait after each W step before final measurements. See [W: Water](../groups/water.md#drying-period) |
+| **Eligible unit** | A lab-tier unit at or above the standard wear level, never opened for repair, from which IDRS digits can be derived. See [IDRS Short Code](idrs.md#eligibility) |
+| **Equivalent level** | The U level assigned to a unit with real wear, from its equivalent days. See [U: Usage](../groups/usage.md#equivalent-level-for-real-wear) |
 | **Enclosure breach** | Dust or liquid inside a sealed compartment |
 | **Exposure area** (*A*) | The sum of length × width of the largest face of each rigid section of a device, in cm² |
 | **Failure** | An effect that meets its uppercase threshold. A level or step at which a failure appears is failed |
@@ -28,9 +30,11 @@ Every term below is used with exactly this meaning throughout the specification.
 | **Rigid section** | A part of a device's body that does not fold or slide relative to itself. A slab phone has one; a foldable or laptop has two |
 | **Sealed compartment** | An interior part of a device that its seals are intended to keep dust and liquid out of |
 | **Short code** | The IDRS code, e.g. `IDRS1 315` (hypothetical). See [IDRS Short Code](idrs.md) |
-| **Standard wear level** | The wear level an IDRS code is issued at. See [U: Usage](../groups/usage.md#standard-wear-level) |
+| **Simulated day** | The unit of U wear: one day's worth of the wear actions in [U: Usage](../groups/usage.md#wear-actions) |
+| **Standard wear level** | The minimum wear level an IDRS code is issued from: U2. See [U: Usage](../groups/usage.md#standard-wear-level) |
 | **Step** (W) | One exposure at one depth tier for one time tier. See [W: Water](../groups/water.md#ladder) |
 | **Test tier** (tier) | The class of test, home or lab. "Tier" used alone always means test tier. See [Test Tiers](../testing/tiers.md) |
 | **Time tier** | One step of the W duration scale. See [W: Water](../groups/water.md#scale) |
 | **Tolerance** | The range in which an effect is recorded in lowercase: from its lowercase threshold up to, but not including, its uppercase threshold |
 | **Unit** | One physical device under test |
+| **Verification unit** | An extra lab unit taken through one group up to a claimed level, then torn down, to confirm a result marked unverified. See [Test Tiers](../testing/tiers.md#verification-unit) |

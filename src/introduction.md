@@ -18,13 +18,14 @@ The exception for a unit that fails during preconditioning is defined in [U: Usa
 
 ## Status
 
-This specification is **Draft v0.3**. It is unofficial and incomplete. Codes issued under a draft use version 0 (see [Code Format](rating/code-format.md#version-prefix)).
+This specification is **Draft v0.4**. It is unofficial. Codes issued under a draft use version 0 (see [Code Format](rating/code-format.md#version-prefix)).
 
 | Area | Status |
 |---|---|
-| Code format, effect letters, IDRS | Defined; `f` and `m` thresholds [TBD] |
-| D and G | Scale, doses, procedure and grading defined; thresholds provisional |
-| W | Scale, ladder and grading defined; spray method, cycles per step and drying period [TBD] |
-| U | Scale and U digit rules defined; wear cycle counts and procedure [TBD] |
+| Code format, effect letters, IDRS | Defined |
+| U | Scale, wear actions, drops, procedure and grading defined |
+| D and G | Scale, doses, procedure and grading defined |
+| W | Scale, ladder, spray, immersion, drying and grading defined |
+| Testing, equipment, reporting | Defined, with a [report template](appendix/report-template.md) |
 
-Every undefined value is marked `[TBD]` and listed in [Open Issues](appendix/open-issues.md). Version history is in the [Changelog](appendix/changelog.md).
+Every rule and value is defined. Doses, wear counts and thresholds are **provisional** until calibrated against real devices; each value added since v0.2 is listed with its basis in [Open Issues](appendix/open-issues.md). Version history is in the [Changelog](appendix/changelog.md).

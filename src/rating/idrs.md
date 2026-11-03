@@ -19,7 +19,7 @@ While this specification is a draft, short codes use version 0 (`IDRS0`).
 ## Eligibility
 
 1. An IDRS code shall be issued only from a lab-tier test. Home-tier tests cannot produce one (see [Test Tiers](../testing/tiers.md)).
-2. An IDRS code shall be derived only from units at or above the [standard wear level](../groups/usage.md#standard-wear-level). These are the **eligible units**. Units written `UX` are not eligible.
+2. An IDRS code shall be derived only from units at or above the [standard wear level](../groups/usage.md#standard-wear-level) whose enclosure has never been opened for repair. These are the **eligible units**. Units written `UX` are not eligible.
 3. If no unit is eligible, no IDRS code shall be issued. The full codes can still be published.
 4. An IDRS code is valid only when the full IDR codes and the test report are published alongside it.
 
@@ -30,9 +30,11 @@ While this specification is a draft, short codes use version 0 (`IDRS0`).
 3. **Dust and grit digits:** the highest level passed with no effect letters other than `i`.
 4. **Water digit:** the deepest depth tier whose time tier 2 step was passed with no effect letters other than `i`. If there is none, the digit is 0.
 5. **Multiple units:** the lowest digit across all eligible units shall be used.
-6. **Enclosure breach found at teardown:** a unit shall not contribute a digit for a group its breach is [attributed](../testing/tiers.md#attributing-an-enclosure-breach) to. If no eligible unit remains for that group, its digit is 0.
+6. **Enclosure breach found at teardown:** a unit shall not contribute a digit for a group its breach is [attributed](../testing/tiers.md#attributing-an-enclosure-breach) to, unless a [verification unit](../testing/tiers.md#verification-unit) has verified that result. If no eligible unit remains for that group, its digit is 0.
 
 > **Note (informative):** Rule 2 exists because the full code only records effects at the rated level. Effects at lower levels, which decide the IDRS digit, appear only in the report.
+
+> **Note (informative):** Repairs that open the enclosure replace or disturb seals, so a repaired unit no longer represents the model as sold.
 
 ## Worked example (hypothetical)
 
